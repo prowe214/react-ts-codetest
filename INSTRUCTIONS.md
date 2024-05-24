@@ -10,7 +10,7 @@ We will create an **Async React Hook**.
 1. Push your branch (push will fail because this is a private repo, that's okay)
 
 ```
-https://jsonplaceholder.typicode.com/todos/1
+https://jsonplaceholder.typicode.com/photos/1
 ```
 
 The data that is returned will look like this, but we only want the URL.
