@@ -3,13 +3,16 @@
 We will create an **Async React Hook**.
 
 1. Open new branch
-1. Write a React Hook that makes an API request.
+1. Write a new React Hook that makes an API request.
+   1. The hook is a new, unique hook, that we will build in a separate file
    1. The hook returns the values `loading`, `data`, and `error`
-   2. The hook makes the request on the below URL
+   1. The hook makes the request on the URL below
+   1. The `data` returned from the hook will be the `url` field from the response
 1. Commit your changes
 1. Push your branch (push will fail because this is a private repo, that's okay)
 
 ```
+# URL for API request
 https://jsonplaceholder.typicode.com/photos/1
 ```
 
