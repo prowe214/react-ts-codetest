@@ -10,7 +10,7 @@ Exercises variations are on separate branches.
 ## Candidate Instructions
 
 1. Clone this repository to your computer
-1. Open the branch that is instructed by the interviewer
+1. Ask your interviewer which exercise you should complete, and open the appropriate branch as listed above
 1. Install necessary dependencies
 1. Run the application
 1. Open `INSTRUCTIONS.md` for your remaining instructions
