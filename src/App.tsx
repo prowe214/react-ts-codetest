@@ -1,15 +1,19 @@
-import reactLogo from "./assets/react.svg";
-import methodLogo from "./assets/method.svg";
-import "./App.css";
+import reactLogo from './assets/react.svg';
+import methodLogo from './assets/method.svg';
+import './App.css';
 
 function App() {
   return (
     <>
       <div>
-        <img src={reactLogo} className="logo" alt="Method logo" />
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
       <div>
-        <img src={methodLogo} className="logo" alt="Method logo" />
+        <a href="https://www.method.com" target="_blank">
+          <img src={methodLogo} className="logo" alt="Method logo" />
+        </a>
       </div>
       <h1>React+TS Code Exercise</h1>
       <div className="card">
@@ -22,7 +26,7 @@ function App() {
           exercise.
         </p>
         <p>
-          When you are ready to start the exercise,{" "}
+          When you are ready to start the exercise,{' '}
           <strong>delete all content from this component</strong> and start
           coding!
         </p>
