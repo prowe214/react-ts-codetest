@@ -4,8 +4,8 @@
 
 Exercises variations are on separate branches.
 
-- `main` - Random number generator
-- `exercise-2` - Async Hook
+- `random` - Random number generator
+- `hook` - Async hook
 
 ## ⭐️ Candidate Instructions
 
