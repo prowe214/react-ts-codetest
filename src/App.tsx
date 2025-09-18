@@ -6,14 +6,10 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src={reactLogo} className="logo react" alt="React logo" />
       </div>
       <div>
-        <a href="https://www.method.com" target="_blank">
-          <img src={methodLogo} className="logo" alt="Method logo" />
-        </a>
+        <img src={methodLogo} className="logo" alt="Method logo" />
       </div>
       <h1>React+TS Code Exercise</h1>
       <div className="card">
