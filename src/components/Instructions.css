@@ -1,0 +1,74 @@
+.instructions {
+  max-width: 650px;
+  margin: auto;
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.instructions > p {
+  margin-top: 0;
+}
+
+.instructions summary {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+  color: #156cc4;
+}
+
+.instructions summary:hover {
+  color: #1560ab;
+}
+
+.instructions details > summary {
+  position: relative;
+  list-style: none;
+  padding-right: 25px;
+}
+
+.instructions details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.instructions details > summary::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #156cc4;
+  border-bottom: 2px solid #156cc4;
+  transition: transform 0.3s ease;
+  transform: translateY(-75%) rotate(45deg);
+}
+
+.instructions details > summary:hover::after {
+  border-right-color: #1560ab;
+  border-bottom-color: #1560ab;
+}
+
+.instructions details[open] > summary::after {
+  transform: translateY(-25%) rotate(-135deg);
+}
+
+.instruction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.instruction-list label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.instruction-list input[type='checkbox'] {
+  margin-top: 0.25rem;
+}

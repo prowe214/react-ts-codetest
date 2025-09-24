@@ -1,34 +1,15 @@
-import reactLogo from './assets/react.svg';
-import methodLogo from './assets/method.svg';
 import './App.css';
+import { Instructions } from './components/Instructions';
+import { MemoryGame } from './components/MemoryGame';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div>
-        <img src={reactLogo} className="logo react" alt="React logo" />
-      </div>
-      <div>
-        <img src={methodLogo} className="logo" alt="Method logo" />
-      </div>
-      <h1>React+TS Code Exercise</h1>
-      <div className="card">
-        <p>
-          Open <code>INSTRUCTIONS.md</code> in this repository for your
-          requirements.
-        </p>
-        <p>
-          This repository is a starting point for a React+TypeScript code
-          exercise.
-        </p>
-        <p>
-          When you are ready to start the exercise,{' '}
-          <strong>delete all content from this component</strong> and start
-          coding!
-        </p>
-      </div>
-    </>
+    <div className="app">
+      <h1>🧠 Memory Game Challenge</h1>
+      <Instructions />
+      <MemoryGame />
+    </div>
   );
-}
+};
 
 export default App;
