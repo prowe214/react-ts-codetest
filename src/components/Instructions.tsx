@@ -32,6 +32,7 @@ export const Instructions = () => {
     <div className="instructions">
       <details open>
         <summary className="instructions-heading">Instructions</summary>
+        <p>Create a new git branch for your changes.</p>
         <p>
           Complete the game logic by implementing the{' '}
           <code>handleCardClick</code> function in <code>MemoryGame.tsx</code>.
@@ -80,7 +81,11 @@ export const Instructions = () => {
           </label>
         </div>
         <p>
-          You may not finish in the time allotted, and that's okay —{' '}
+          After completing the exercise, commit your changes and push to the git
+          remote. (The push will fail, that's okay — ignore the error.)
+        </p>
+        <p>
+          You may not finish in the time allotted, but{' '}
           <strong>
             we're most interested in hearing how you think through the problem
             and explain your approach

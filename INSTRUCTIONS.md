@@ -1,6 +1,7 @@
 # Instructions for Code Exercise
 
-Complete the game logic by implementing the `handleCardClick` function in `MemoryGame.tsx`.
+0. Create a new git branch for your changes.
+1. Complete the game logic by implementing the `handleCardClick` function in `MemoryGame.tsx`.
 
 The game should:
 
@@ -10,7 +11,11 @@ The game should:
 - [ ] Detect when all cards are matched to end the game
 - [ ] Display game over state with final move count
 
-You may not finish in the time allotted, and that's okay — **we're most interested in hearing how you think through the problem and explain your approach**.
+2. Commit your changes and push to the git remote
+
+- The push will fail, that's okay — ignore the error
+
+You may not finish in the time allotted, but **we're most interested in hearing how you think through the problem and explain your approach**.
 
 ## Implementation Details
 
