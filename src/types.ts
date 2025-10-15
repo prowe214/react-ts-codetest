@@ -7,6 +7,5 @@ export interface Card {
 
 export interface GameState {
   cards: Card[];
-  moves: number;
   isGameOver: boolean;
 }

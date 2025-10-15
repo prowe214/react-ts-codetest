@@ -7,19 +7,19 @@ The game should:
 
 - [ ] Allow flipping a maximum of 2 cards at a time
 - [ ] Check if flipped cards match and flip non-matches back after a delay
-- [ ] Track the number of moves (a move is when 2 cards are flipped)
-- [ ] Detect when all cards are matched to end the game
-- [ ] Display game over state with final move count
+- [ ] Display game over state when all cards are matched
 
 2. Commit your changes and push to the git remote
 
 - The push will fail, that's okay — ignore the error
 
-You may not finish in the time allotted, but **we're most interested in hearing how you think through the problem and explain your approach**.
+You will have **20 minutes** to complete this exercise. You may not finish in the time allotted, but **we're most interested in hearing how you think through the problem and explain your approach**.
 
 ## Implementation Details
 
 Your task is to implement the core game logic for the Memory Game. The UI components are already created for you, and you need to add the missing functionality to make the game interactive and functional.
+
+https://github.com/user-attachments/assets/fae114f7-d8ad-4a5a-b506-b1de37159bd8
 
 ### Tips:
 

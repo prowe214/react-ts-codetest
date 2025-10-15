@@ -7,7 +7,6 @@ import './MemoryGame.css';
 export const MemoryGame = () => {
   const [gameState, setGameState] = useState<GameState>({
     cards: createInitialCards(),
-    moves: 0,
     isGameOver: false
   });
 
@@ -15,16 +14,13 @@ export const MemoryGame = () => {
     // TODO: Implement the game logic here
     // Requirements:
     // 1. Handle flipping cards (max 2 at a time)
-    // 2. Check for matches
-    // 3. Track moves (a move is when 2 cards are flipped)
-    // 4. Determine win condition (all cards matched)
-    // 5. Handle game over state
+    // 2. Check for matches and flip non-matches back after a delay
+    // 3. Display game over state when all cards matched
   };
 
   const resetGame = () => {
     setGameState({
       cards: createInitialCards(),
-      moves: 0,
       isGameOver: false
     });
   };
@@ -33,7 +29,6 @@ export const MemoryGame = () => {
     <div className="memory-game">
       <div className="game-header">
         <div className="game-stats">
-          <span>Moves: {gameState.moves}</span>
           <button className="button" type="button" onClick={resetGame}>
             Reset Game
           </button>
@@ -49,7 +44,7 @@ export const MemoryGame = () => {
       {gameState.isGameOver && (
         <div className="game-over">
           <h2>Congratulations! 🎉</h2>
-          <p>You won in {gameState.moves} moves!</p>
+          <p>You won the game!</p>
           <button
             className="button button--success"
             type="button"

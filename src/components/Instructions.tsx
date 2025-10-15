@@ -6,8 +6,6 @@ const STORAGE_KEY = 'memoryGameInstructions';
 const defaultSteps = {
   flipCards: false,
   checkMatch: false,
-  trackMoves: false,
-  detectEnd: false,
   handleGameOver: false
 };
 
@@ -58,26 +56,10 @@ export const Instructions = () => {
           <label>
             <input
               type="checkbox"
-              checked={steps.trackMoves}
-              onChange={() => handleStepChange('trackMoves')}
-            />
-            Track the number of moves (a move is when 2 cards are flipped)
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              checked={steps.detectEnd}
-              onChange={() => handleStepChange('detectEnd')}
-            />
-            Detect when all cards are matched to end the game
-          </label>
-          <label>
-            <input
-              type="checkbox"
               checked={steps.handleGameOver}
               onChange={() => handleStepChange('handleGameOver')}
             />
-            Display game over state with final move count
+            Display game over state when all cards are matched
           </label>
         </div>
         <p>
@@ -85,6 +67,7 @@ export const Instructions = () => {
           remote. (The push will fail, that's okay — ignore the error.)
         </p>
         <p>
+          You will have <strong>20 minutes</strong> to complete this exercise.
           You may not finish in the time allotted, but{' '}
           <strong>
             we're most interested in hearing how you think through the problem
