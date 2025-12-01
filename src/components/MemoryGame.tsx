@@ -1,14 +1,12 @@
 import { useState } from 'react';
-import type { GameState } from '../types';
+import type { Cards } from '../types';
 import { createInitialCards } from '../utils';
 import { Card } from './Card';
 import './MemoryGame.css';
 
 export const MemoryGame = () => {
-  const [gameState, setGameState] = useState<GameState>({
-    cards: createInitialCards(),
-    isGameOver: false
-  });
+  const [cards, setCards] = useState<Cards>(createInitialCards());
+  const [isGameOver, setIsGameOver] = useState(false);
 
   const handleCardClick = (id: number) => {
     // TODO: Implement the game logic here
@@ -19,10 +17,8 @@ export const MemoryGame = () => {
   };
 
   const resetGame = () => {
-    setGameState({
-      cards: createInitialCards(),
-      isGameOver: false
-    });
+    setCards(createInitialCards());
+    setIsGameOver(false);
   };
 
   return (
@@ -36,12 +32,12 @@ export const MemoryGame = () => {
       </div>
       <div className="game-grid-container">
         <div className="game-grid">
-          {gameState.cards.map((card) => (
+          {cards.map((card) => (
             <Card key={card.id} card={card} onClick={handleCardClick} />
           ))}
         </div>
       </div>
-      {gameState.isGameOver && (
+      {isGameOver && (
         <div className="game-over">
           <h2>Congratulations! 🎉</h2>
           <p>You won the game!</p>

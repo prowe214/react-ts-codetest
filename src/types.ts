@@ -5,7 +5,4 @@ export interface Card {
   isMatched: boolean;
 }
 
-export interface GameState {
-  cards: Card[];
-  isGameOver: boolean;
-}
+export type Cards = Card[];
